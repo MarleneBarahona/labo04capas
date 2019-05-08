@@ -1,30 +1,35 @@
 package com.uca.capas.domain;
 
+import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
 public class Producto {
 
-	@Size(message="El maximo de longitud es 30 ",max=30)
-	@NotEmpty(message="No puede estar vacio")
+	@Size(message="El maximo de longitud es 30. ",max=30)
+	@NotEmpty(message="No puede estar vacio. ")
 	String nombre;
 	
-	@Size(message="El maximo de longitud es 30 ",max=30)
-	@NotEmpty(message="No puede estar vacio")
+	@Size(message="El maximo de longitud es 30. ",max=30)
+	@NotEmpty(message="No puede estar vacio. ")
 	String marca;
 	
-	@Size(message="El maximo de longitud es 30 ",max=30)
-	@NotEmpty(message="No puede estar vacio")
+	@Size(message="El maximo de longitud es 30. ",max=30)
+	@NotEmpty(message="No puede estar vacio. ")
 	String descripcion;
 	
-	@Size(message="El maximo de longitud es 30 ",max=30)
-	@NotEmpty(message="No puede estar vacio")
+	@Size(message="El maximo de longitud es 30. ",max=30)
+	@NotEmpty(message="No puede estar vacio. ")
 	String categoria;
 	
-	@Size(message="El maximo de longitud es 30 ",max=30)
-	@NotEmpty(message="No puede estar vacio")
+	@Size(message="El maximo de longitud es 30. ",max=30)
+	@NotEmpty(message="No puede estar vacio. ")
+	@Min(message="No puede ser menor que 0. ",value=0)
 	String precio;
 	
+	@NotEmpty(message="No puede estar vacio")
+	@Pattern(regexp="^[0-9]{2}/[0-9]{2}/[1-9]{1}[0-9]{3}", message="El formato debe ser dd/mm/yy, Ejemplo: 13/05/2020.")
 	String fVencimiento;
 	
 	public Producto(String nombre, String marca, String descripcion, String categoria, String precio,

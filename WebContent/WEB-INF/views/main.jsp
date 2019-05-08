@@ -13,27 +13,27 @@
 	
 		<label>Ingrese nombre del producto: </label>
 		<form:input type="text" name="nombre" path="nombre"/>
-		<form:errors path="nombre" cssStyle="color:E81505;" ></form:errors><br>
+		<form:errors path="nombre" cssStyle="color:#E81505;" ></form:errors><br>
 		
 		<label>Ingrese marca del producto: </label>
 		<form:input type="text" name="marca" path="marca"/>
-		<form:errors path="marca" cssStyle="color:E81505;" ></form:errors><br>
+		<form:errors path="marca" cssStyle="color:#E81505;" ></form:errors><br>
 		
 		<label>Ingrese descripcion del producto: </label>
 		<form:input type="text" name="descripcion" path="descripcion"/>
-		<form:errors path="descripcion" cssStyle="color:E81505;" ></form:errors><br>
+		<form:errors path="descripcion" cssStyle="color:#E81505;" ></form:errors><br>
 		
 		<label>Ingrese categoria del producto: </label>
 		<form:input type="text" name="categoria" path="categoria"/>
-		<form:errors path="categoria" cssStyle="color:E81505;" ></form:errors><br>
+		<form:errors path="categoria" cssStyle="color:#E81505;" ></form:errors><br>
 		
 		<label>Ingrese precio del producto: </label>
 		<form:input type="text" name="precio" path="precio"/>
-		<form:errors path="precio" cssStyle="color:E81505;" ></form:errors><br>
+		<form:errors path="precio" cssStyle="color:#E81505;" ></form:errors><br>
 		
 		<label>Ingrese fecha de vencimiento del producto: </label>
 		<form:input type="text" name="fVencimiento" path="fVencimiento"/>
-		<form:errors path="fVencimiento" cssStyle="color:E81505;" ></form:errors><br>
+		<form:errors path="fVencimiento" cssStyle="color:#E81505;" ></form:errors><br>
 		
 		<input type="submit" value="Agregar usuario">
 	</form:form>
